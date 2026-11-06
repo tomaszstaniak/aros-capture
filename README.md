@@ -2,7 +2,7 @@
 
 Screenshots and annotations for AROS. Select an area or capture a screen, add arrows, shapes or freehand marks, then save as PNG, copy to the clipboard or drag the image into a Wanderer drawer.
 
-[Download 0.1.0](https://github.com/tomaszstaniak/aros-capture/releases/tag/v0.1.0) for **AROS One / x86_64 ABIv11** or **Raspberry Pi / aarch64 ABIv1**.
+[Download 0.1.1](https://github.com/tomaszstaniak/aros-capture/releases/tag/v0.1.1) for **AROS One / x86_64 ABIv11** or **Raspberry Pi / aarch64 ABIv1**.
 
 ## Install
 
