@@ -1,14 +1,12 @@
 AROS Capture @VERSION@
 @TARGET_LINE@
 
-A screenshot tool: choose an area of the screen, mark it up and save it,
-copy it or drag it into a drawer.
+Capture an area or a screen, add annotations, then save as PNG, copy to
+the clipboard or drag the image into a Wanderer drawer.
 
 Installation
   Copy the AROSCapture drawer anywhere, for example to SYS:Utilities.
-  Everything it needs is inside the drawer: the toolbar icons (Icons) and
-  svgicon.library (libs), which it finds there by itself. No Assign and
-  nothing in SYS:Libs is needed.
+  Keep the Icons, libs and Widget drawers beside the program.
 
 Use
   Double-click AROS Capture: drag a rectangle around the area you want
@@ -39,18 +37,16 @@ Shell
   Return codes: 0 saved, 5 cancelled, 10 not saved, 20 wrong arguments.
 
 Dockbar
-  Double-click Add to Dockbar in this drawer to put an AROS Capture
-  button on Dockbar (Dockbar 0.6.0 or newer). Dockbar installs it and asks
-  whether to add it to the dock. A click on the button offers: capture an
-  area, the screen, the screen in 5 seconds, or open the capture folder.
+  With Dockbar 0.6.0 or newer, open Add to Dockbar to install the widget
+  and choose a dock. Its actions capture an area, capture the screen,
+  capture after five seconds, or open the screenshot folder.
   If Dockbar is not running, you can choose the Dockbar program to start
   it, or skip. Running Add to Dockbar again updates the button and keeps
   its place. If you move the AROS Capture drawer, run it again.
   From the Shell: AddToDockbar [DOCKBAR=<Dockbar program>] [QUIET].
 
-  With any Dockbar version you can also drop the AROS Capture icon on the
-  dock for a program item (area choice and editor), or add a command item
-  such as "AROSCapture SCREEN NOTIFY".
+  Other docks can launch AROSCapture as a normal program. For a command
+  shortcut, use AROSCapture SCREEN NOTIFY.
 
 Limits
   @LIMITS@

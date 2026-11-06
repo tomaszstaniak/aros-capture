@@ -28,8 +28,7 @@ case "$CAPTURE_TARGET" in
     lic="AROS-APL-1.1.txt LLVM-Apache-2.0-with-LLVM-exception.txt LunaSVG-PlutoVG-MIT.txt"
     limits="A capture is the picture of one screen: the front screen, or the one
   named with PUBSCREEN. See-through (translucent) windows are not
-  included; the program says so when it happens. Tested in QEMU only, not
-  yet on a physical Raspberry Pi."
+  included; the program says so when it happens."
     ;;
   *) echo "CAPTURE_TARGET must be x86_64-abiv11 or aarch64-raspi-v1" >&2; exit 1 ;;
 esac
