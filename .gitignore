@@ -1,0 +1,4 @@
+/build/
+/dist/
+/local.env
+.DS_Store

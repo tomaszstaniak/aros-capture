@@ -1,0 +1,24 @@
+<!--
+Program icon of AROS Capture. The nine paths are those of Tabler Icons
+"screenshot" (assets/tabler/screenshot.svg, MIT, see assets/tabler/LICENSE),
+unchanged; drawn twice: a wide light stroke under the dark glyph so that it
+reads on light and dark backdrops.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <g id="glyph">
+      <path d="M7 19a2 2 0 0 1 -2 -2" />
+      <path d="M5 13v-2" />
+      <path d="M5 7a2 2 0 0 1 2 -2" />
+      <path d="M11 5h2" />
+      <path d="M17 5a2 2 0 0 1 2 2" />
+      <path d="M19 11v2" />
+      <path d="M19 17v4" />
+      <path d="M21 19h-4" />
+      <path d="M13 19h-2" />
+    </g>
+  </defs>
+  <use href="#glyph" stroke="#ffffff" stroke-opacity="0.85" stroke-width="3.6" />
+  <use href="#glyph" stroke="#2b2d31" stroke-width="2" />
+</svg>

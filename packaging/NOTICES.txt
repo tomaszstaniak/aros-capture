@@ -1,0 +1,34 @@
+Components of this package
+
+AROSCapture, AddToDockbar, Widget (the Dockbar button), and their icons
+  AROS Capture, MIT licence, see LICENSE.
+  Source revision: @SOURCE@
+
+  The program also contains code of zunekit (Zune classes zk_toolbar,
+  zk_imageview, zk_dragout), revision @ZUNEKIT@, by the same author,
+  MIT licence.
+
+  The icons AROSCapture.info, AddToDockbar.info, the drawer icon and
+  ReadMe.info are drawn from the Tabler Icons "screenshot",
+  "layout-bottombar" and "file-text" (paths unchanged, with a light outline
+  added). The Dockbar button uses Tabler's screenshot.svg unmodified; the
+  Tabler licence is also in Widget/org.aros.capture/licenses.
+
+Icons/*.svg (toolbar icons)
+  Tabler Icons, https://github.com/tabler/tabler-icons, revision
+  a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d, shipped unmodified.
+  MIT licence, text in Icons/LICENSE.
+
+libs/svgicon.library
+  An SVG renderer library from the separate aros-svg-icons project by the
+  same author, revision @SVGICON_REV@ (sha256 @SVGICON_SHA@).
+  The code of that project is under the MIT licence; its text and the
+  project's list of the third-party components inside the library are in
+  licenses/svgicon (LICENSE, THIRD-PARTY.md), with the licence texts of
+  those components. The library contains LunaSVG and its bundled PlutoVG,
+  commit cf3594d5232e075fb344365191f0ecadd1519e1e (MIT), @RUNTIME@,
+  and AROS link libraries (AROS Public License 1.1).
+
+AROS link libraries in AROSCapture
+  The program is linked with the AROS SDK's start-up code and link
+  libraries, AROS Public License 1.1 (licenses/svgicon/AROS-APL-1.1.txt).

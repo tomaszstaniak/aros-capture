@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "org.aros.capture",
+  "name": "AROS Capture",
+  "version": "@VERSION@",
+  "description": "Screenshots from the dock: an area, the screen, the screen in 5 seconds, or the capture folder.",
+  "author": "Tomasz Staniak",
+  "license": "MIT",
+  "api": {"min": 2, "max": 2},
+  "hosts": ["dockbar"],
+  "capabilities": [],
+  "refresh": "none",
+  "actions": [
+    {"id": "area", "label": "Capture an area"},
+    {"id": "screen", "label": "Capture the screen"},
+    {"id": "delay", "label": "Capture the screen in 5 seconds"},
+    {"id": "folder", "label": "Open the capture folder"}
+  ],
+  "settings": "settings.json",
+  "views": "views.json",
+  "entryPoints": {"@TARGET@": "bin/@TARGET@/CaptureWidget"}
+}

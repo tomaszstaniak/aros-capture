@@ -1,0 +1,24 @@
+{
+  "upstream": "https://github.com/tabler/tabler-icons",
+  "revision": "a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d",
+  "license": "MIT",
+  "source_directory": "icons/outline",
+  "retrieved": "2026-11-06",
+  "use": "shipped unmodified as runtime SVG files, rendered by svgicon.library",
+  "files": {
+    "arrow-back-up.svg": "42a20a833068ac155cc2e3a4176a9e80a918cc62c8bf48d3f826a2c47bde739d",
+    "arrow-up-right.svg": "b7d952b0b6fbd089b110d85639ffffc001bb41fe53040e5e7f3e3f65ddc22595",
+    "circle.svg": "d7e7e7ec68e225eabf75483881ce12a290a746d0e4ebb56b874c05e068438d0b",
+    "copy.svg": "3a455a299db4ec939fd0473d15c81c1d3f30f65dec81a7de816317c989b06073",
+    "device-floppy.svg": "332fb64778e96e0de3ef6a4262baa8bf2c1983d478bb14d284c4a2450f9e0130",
+    "file-text.svg": "afc807ae397fc2419ac5cbca6a1e085a5f761277397682cbad3d907ca78693f5",
+    "layout-bottombar.svg": "359a781f613ccab41495dc502349930a7d5e4de7b91f4ad8168c3557e713fabb",
+    "line.svg": "560073b9b34b30f6c831d47ec0fde54f78550e3ab2ce5949638600e9aca9b26b",
+    "pencil.svg": "422796681dab2177b958836952b0a581025013a78d8a8c9df9c1af43f62d0e97",
+    "pointer.svg": "811735d187eaf6c8a7b7f06053140b8284cf4b1b2ea7ba1c8f340f1fbafbac24",
+    "screenshot.svg": "9415b2422dcaed1443593f5e8b7498f956ce769f8c28c173795dbe735f1647da",
+    "settings.svg": "ef9cf42d822c00b4fad5bc5eeceddd4e1ec3774bb7ddd09891d0fba274bc3e95",
+    "square.svg": "03f16281a365e8e68f5d084342c9f7b0c04b02f0ddf79668adb3247f83f662d4"
+  },
+  "icon_sources": "screenshot.svg and file-text.svg are also the sources of the Workbench icons (assets/icon/*.svg: the same paths, unchanged, drawn with a light halo); file-text.svg is not shipped as a toolbar icon"
+}
