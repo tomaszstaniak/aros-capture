@@ -8,13 +8,6 @@ Screenshots and annotations for AROS. Select an area or capture a screen, add ar
 
 Unpack the archive and copy the `AROSCapture` drawer wherever you keep your applications. Keep its contents together.
 
-Or install with [arospkg](https://github.com/tomaszstaniak/arospkg):
-
-```sh
-apkg update
-apkg install aroscapture
-```
-
 ## Use
 
 Open AROS Capture and select an area. The editor lets you annotate, save or copy the image. Screenshots go to `SYS:Pictures/Captures`; choose another folder in Settings.
@@ -31,7 +24,7 @@ With [Dockbar](https://github.com/tomaszstaniak/aros-dockbar) 0.6.0 or newer, op
 
 Captures contain one AROS screen and omit the mouse pointer. On Raspberry Pi, translucent windows are omitted from the image.
 
-See the included ReadMe for keyboard shortcuts and Shell options. Build instructions are in the [development guide](docs/development.md).
+See the [user guide](docs/usage.md) for keyboard shortcuts and Shell options. Build instructions are in the [development guide](docs/development.md).
 
 ## Licence
 

@@ -25,7 +25,7 @@
 `scripts/build.sh` builds one target into `build/<target>/`:
 
 ```sh
-CAPTURE_TARGET=x86_64-v1 \
+CAPTURE_TARGET=x86_64-abiv11 \
 AROS_CC=/path/to/x86_64-aros-gcc \
 AROS_SDK=/path/to/matching/Developer \
 ZUNEKIT_DIR=/path/to/zunekit \
@@ -55,29 +55,8 @@ cc -I src tests/test_widgetreq.c src/widgetreq.c -o /tmp/test_widgetreq && /tmp/
 
 `scripts/make-icon.sh` builds the Workbench icons (`AROSCapture.info`, `AddToDockbar.info`, the drawer icon, `ReadMe.info`) from `assets/icon/*.svg` with the AROS icon tool `ilbmtoicon`; the images are rendered on the host by the svgicon renderer (`SVGICON_DIR` with its host build, `ILBMTOICON` from an AROS build tree). `scripts/package.sh` then packs a drawer built with `SVGICON_LIBRARY` into `dist/AROSCapture-<version>-aros-<arch>-<abi>-<board>.zip` with ReadMe, NOTICES, the licences and BuildInfo, for `CAPTURE_TARGET=x86_64-abiv11` or `aarch64-raspi-v1`. It refuses uncommitted sources, test flags, an svgicon.library that does not match its BUILDINFO or comes from a modified tree, host paths, and an existing archive.
 
-## Use
+## Capture diagnostics
 
-Without arguments (Workbench, Shell or a Dockbar program item) the program asks for an area and opens the editor. Drag to choose; Return takes the whole screen; Esc or the right mouse button cancel.
+`AROSCapture PROBE=<folder> [PUBSCREEN=<name>]` writes the screen bitmap, composited layer surfaces and a report to the chosen folder.
 
-The editor's toolbar: new capture (N), copy to the clipboard (C), save to the capture folder (S), drag out (V: drag the picture into a Wanderer drawer), rectangle (R), ellipse (O), line (L), arrow (A), pencil (P), undo (Z) and settings. Tab copies the colour under the pointer as `#RRGGBB`. Keys 0 and 1 show the picture fitted or at 100 %.
-
-The capture folder defaults to `SYS:Pictures/Captures` and is created on the first save. Change it in Settings; it is kept in `ENVARC:AROSCapture/Folder` and used by the editor and by the Shell commands below. If it cannot be stored (for example a write-protected `ENVARC:`), Settings say so and the previous folder stays in use.
-
-Shell interface, for scripts and Dockbar command items:
-
-```
-AROSCapture SCREEN|REGION [DELAY=<seconds>] [TO=<file> [FORCE]|DIR=<folder>] [PUBSCREEN=<name>] [QUIET] [NOTIFY]
-```
-
-`SCREEN` saves the whole public screen, `REGION` asks for an area first. Without `TO` or `DIR` the file goes to the capture folder. `TO` names a file; an existing one is replaced only with `FORCE`, and the old file is kept until the new one is complete. `QUIET` prints nothing on success. `NOTIFY` shows a short notice at the top of the screen after saving or failing (for Dockbar command items, which have no Shell window); it does not change the output or the return code. Return codes: 0 saved, 5 cancelled, 10 not saved (the reason is printed), 20 wrong arguments or the editor could not start. Ctrl-C cancels a delay.
-
-Dockbar: drop the AROSCapture icon on the dock for a program item (area, then editor); in its Edit shortcut window the icon can be set to `Icons/screenshot.svg` in the AROS Capture drawer. For one-click captures use Add command with, for example, `AROSCapture SCREEN NOTIFY` or `AROSCapture REGION DELAY=3 NOTIFY` and "Open a Shell window" off; the file goes to the capture folder.
-
-`AROSCapture PROBE=<folder> [PUBSCREEN=<name>]` writes diagnostic data about composited windows (screen bitmap, each composited layer's surface, a report).
-
-## Limits
-
-- A capture is the picture of one screen. When several screens are shown at once (a screen dragged down), only that screen is captured.
-- On mainline AROS (including the Raspberry Pi), see-through windows, such as Dockbar's, are not part of the screen picture. AROS Capture says how many were left out. While choosing an area they disappear for a moment.
-- The mouse pointer is not captured.
-- Window capture, image formats other than PNG, and video are not implemented.
+User-facing commands and shortcuts are documented in the [user guide](usage.md).
