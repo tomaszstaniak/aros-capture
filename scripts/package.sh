@@ -23,7 +23,7 @@ case "$CAPTURE_TARGET" in
     ;;
   aarch64-raspi-v1)
     suffix=aros-aarch64-abiv1-raspi
-    target_line="For AROS on the Raspberry Pi (aarch64, ABIv1)."
+    target_line="For AROS on the Raspberry Pi (aarch64, ABIv1), a nightly build of 2026-11-24 or later. On an earlier nightly use AROSCapture 0.1.1."
     runtime="the LLVM 20.1.0 runtime (libc++, libc++abi, libunwind; Apache-2.0 with LLVM exception)"
     lic="AROS-APL-1.1.txt LLVM-Apache-2.0-with-LLVM-exception.txt LunaSVG-PlutoVG-MIT.txt"
     limits="A capture is the picture of one screen: the front screen, or the one
